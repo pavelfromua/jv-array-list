@@ -68,7 +68,8 @@ public class ArrayList<T> implements List<T> {
 
     @Override
     public T remove(int index) {
-        T value = myList[index];
+        T value;
+        value = myList[index];
 
         ensureCapacity(size - 1, index);
         myList[size--] = null;
